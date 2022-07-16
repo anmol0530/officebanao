@@ -1,0 +1,76 @@
+.new-project {
+    position: relative;
+
+    .new-project-btn {
+        width: 199.44px;
+        height: 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+
+        background: #60d1d0;
+        box-shadow: 0px 3.55556px 8.88889px rgba(16, 156, 241, 0.24);
+        border-radius: 5px;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12.4444px;
+        line-height: 15px;
+
+        text-align: center;
+        letter-spacing: 0.04em;
+
+        color: #ffffff;
+
+        span {
+            font-size: large;
+        }
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 52px;
+        right: 0px;
+        width: 250px;
+        padding: 18px;
+        gap: 10px;
+        border-radius: 5px;
+        background: white;
+        box-shadow: 0px 4px 10px rgb(0 0 0 / 15%);
+        border-radius: 5px;
+        z-index: 2;
+        font-size: small;
+
+        input {
+            outline: 0;
+            border-radius: 5px;
+            padding: 8px;
+        }
+
+        button {
+            width: 150px;
+            align-self: center;
+            margin-top: 10px;
+            background: #121942;
+            cursor: pointer;
+            box-shadow: 0px 3.48276px 8.70691px rgba(16, 156, 241, 0.24);
+            border-radius: 5px;
+            color: white;
+            width: 150px;
+            padding: 10px 20px;
+            text-align: center;
+        }
+    }
+
+    .dropdown-toggler {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+}

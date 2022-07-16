@@ -1,0 +1,85 @@
+.dropdown {
+    .selected {
+        cursor: pointer;
+    }
+    position: relative;
+    padding: 0 20px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    height: 50px;
+    width: 300px;
+
+    .project-name {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.04em;
+    }
+
+    .id-location {
+        .project-id {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 17px;
+            letter-spacing: 0.04em;
+
+            color: #109cf1;
+        }
+
+        .location {
+            margin-left: 10px;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.04em;
+
+            color: #60d1d0;
+        }
+    }
+
+    .dropdown-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        z-index: 2;
+        top: 60px;
+        left: 0;
+        width: 340px;
+        max-height: 300px;
+        overflow-y: auto;
+        background: white;
+        box-shadow: 0px 4px 10px rgb(0 0 0 / 15%);
+        border-radius: 5px;
+        scrollbar-width: thin;
+        scrollbar-color: rgb(206, 204, 204);
+
+        .item {
+            cursor: pointer;
+            padding: 5px 20px;
+        }
+
+        .item:hover {
+            background: rgb(240, 240, 240);
+        }
+    }
+
+    .dropdown-list::-webkit-scrollbar {
+        width: 7px;
+    }
+
+    .dropdown-list::-webkit-scrollbar-thumb {
+        background-color: rgb(206, 204, 204);
+        border-radius: 20px;
+    }
+
+    .dropdown-toggler {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+}
