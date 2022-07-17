@@ -1,6 +1,8 @@
 import ReactEcharts from 'echarts-for-react';
 
 const Chart = () => {
+  var colorPalette = ['#3E5AFF', '#FFB55F', '#FF796C', '#707ED1', '#9C6DFF'];
+
   const options = {
     
     series: [
@@ -12,18 +14,22 @@ const Chart = () => {
           borderColor: '#fff',
           borderWidth: 1
         },
+        color: colorPalette,
         label: {
-          show:false
+          formatter: '{d}%',
+          position: "inner",
+          fontSize: 10,
+          color: 'white'
         },
         labelLine: {
           show: false,
         },
         data: [
-          { value: 1048, name: 'Open Workspace' },
-          { value: 735, name: 'Cabins' },
-          { value: 580, name: 'Meeting Rooms' },
-          { value: 484, name: 'Public Spaces' },
-          { value: 300, name: 'Suppor Spaces' }
+          { value: 900, name: 'Open Workspace' },
+          { value: 367, name: 'Cabins' },
+          { value: 285, name: 'Meeting Rooms' },
+          { value: 900, name: 'Public Spaces' },
+          { value: 398, name: 'Support Spaces' }
         ],
         emphasis: {
           itemStyle: {
