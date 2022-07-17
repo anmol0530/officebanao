@@ -5,15 +5,17 @@ import { useState } from 'react';
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
 
-    const handleClick = () => {
-        setToggle(prev => !prev);
+    const handleClick = (e) => {
+        if(e.target.className !== 'name') {
+            setToggle(prev => !prev);
+        }
     }
 
     return (
         <div className={toggle ? "navbar open" : "navbar"} onClick={handleClick}>
             <div className="top">
                 <img src={logo} alt="" className='logo' />
-                {toggle && <img src={name} alt="" className="name" />}
+                {toggle && <a href="https://github.com/anmol0530/officebanao" className='github' target="_blank" rel="noreferrer"><img src={name} alt="" className="name" /></a>}
             </div>
             <div className="bottom">
                 <div className="menu-items">
